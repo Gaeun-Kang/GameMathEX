@@ -7,7 +7,6 @@ public class pendulum : MonoBehaviour
     public float angle = 0;
     public float speed = 2f;
     private float lerpTime = 0;
-    
 
     private void Update()
     {
@@ -17,8 +16,7 @@ public class pendulum : MonoBehaviour
 
     Quaternion CalculateMovementOfPendulum()
     {
-        return Quaternion.Lerp(Quaternion.Euler(Vector3.forward * angle),
-            Quaternion.Euler(Vector3.back * angle), GetLerpTParam());
+        return Quaternion.Lerp(Quaternion.Euler(Vector3.forward * angle), Quaternion.Euler(Vector3.back * angle), GetLerpTParam());
     }
 
     float GetLerpTParam()

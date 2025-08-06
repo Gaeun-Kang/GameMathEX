@@ -10,9 +10,8 @@ public class FOV : MonoBehaviour
 
     void Update()
     {
-        OnDrawGizmos();
+     
     }
-
    
 
     void OnDrawGizmos()
